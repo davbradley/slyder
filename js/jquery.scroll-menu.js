@@ -5,6 +5,9 @@
 		var scrollTop = $(window).scrollTop();
 		this.removeClass('scroll-menu-active').css('top', null).css('width', null);
 		$('.scroll-menu-container').css('top', null).css('width', null);
+		if (scrollTop < 10) {
+			return;
+		}
 		this.each(function () {
 			var $menu = $(this);
 			var top = $menu.data('original-top');
