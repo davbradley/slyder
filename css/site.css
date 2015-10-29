@@ -6756,8 +6756,20 @@ p.lead {
 .gutter-top {
   height: 200px;
 }
+.img-product {
+  margin-top: 100px;
+}
+#navbar li a {
+  font-size: 2.15rem;
+  line-height: 4rem;
+  font-weight: 100;
+  margin: 0 1.25rem;
+}
 .navbar-alpha {
   background-color: none;
+}
+.navbar-brand img.slyder-logo {
+  min-width: 300px;
 }
 /* Footer */
 .full {
