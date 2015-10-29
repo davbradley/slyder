@@ -3,8 +3,8 @@
 	function changeHandler() {
 		var topOffset = 0;
 		var scrollTop = $(window).scrollTop();
-		this.removeClass('scroll-menu-active').css('top', null).css('width', null);
-		$('.scroll-menu-container').css('top', null).css('width', null);
+		this.removeClass('scroll-menu-active').css('top', '').css('width', '');
+		$('.scroll-menu-container').css('width', '').css('height', '');
 		if (scrollTop < 10) {
 			return;
 		}
