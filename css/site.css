@@ -6733,10 +6733,19 @@ p.lead {
   font-size: 2.75rem;
 }
 .slyder-hero {
+  position: relative;
   background-color: beige;
+  background-image: url('http://grovemade.com/shop-static/shop/slider/homemarq-keyring-B1.jpg');
+  background-size: cover;
+  background-position: center bottom;
+  height: 600px;
 }
 .slyder-hero .slyder-hero-items {
-  margin: 50px auto;
+  margin-top: 250px;
+}
+.slyder-hero .slyder-hero-subnav {
+  position: absolute;
+  bottom: 0;
 }
 .content {
   background-color: white;
@@ -6759,14 +6768,18 @@ p.lead {
 .img-product {
   margin-top: 100px;
 }
+#navbar {
+  background-color: none;
+  margin-bottom: 0;
+}
 #navbar li a {
   font-size: 2.15rem;
   line-height: 4rem;
   font-weight: 100;
   margin: 0 1.25rem;
 }
-.navbar-alpha {
-  background-color: none;
+.navbar.scroll-menu-active {
+  background-color: #FFFFFF !important;
 }
 .navbar-brand img.slyder-logo {
   min-width: 300px;
