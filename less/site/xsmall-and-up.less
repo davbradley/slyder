@@ -1,6 +1,17 @@
 // main: ../site.less
 
 @white-alpha: rgba(255, 255, 255, 0.9);
+.btn-black {
+	background-color: #111;
+	color: #fcfcfc;
+	font-weight: 100;
+	border: 2px solid #333;
+}
+
+.btn-black:hover {
+	border: 2px solid #666;
+	color: #fcfcfc;
+}
 
 body {
 	background-color: azure;
@@ -59,12 +70,36 @@ p.lead {
 	}
 }
 
+<<<<<<< Updated upstream
 #slyder-hero-canvas {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
+=======
+.slyder-page {
+	position: relative;
+	background-color: beige;
+	background-image:url('http://grovemade.com/shop-static/shop/slider/homemarq-keyring-B1.jpg');
+	background-size: cover;
+	background-position: center bottom;
+	height: 250px;
+	.slyder-page-items {
+		position: absolute;
+		width: 100%;
+		margin-left: -15px;
+		top: 50%;
+		h1 {
+			color: #FFF;
+			font-weight: 100;
+			padding-bottom: 20px;
+			small {
+				color: #fcfcfc;
+			}
+		}
+	}
+>>>>>>> Stashed changes
 }
 
 ul.nav-justified.scroll-menu-active {
@@ -105,6 +140,18 @@ ul.nav-justified.scroll-menu-active {
 
 .img-product {
 	margin-top: 100px;
+}
+
+ul.nav {
+	li {
+		a {
+			border-bottom: 2px solid rgba(255, 255, 255, 0.0);
+		}
+		a:hover {
+			background: none;
+			border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+		}
+	}
 }
 
 nav.navbar {
@@ -232,4 +279,7 @@ nav.navbar-alpha {
 	text-align: center;
 }
 
-
+/* SUPPORT */
+.contact-form {
+	margin-top: 70px;
+}
