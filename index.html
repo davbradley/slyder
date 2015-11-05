@@ -31,7 +31,7 @@
 
 	<div class="slyder-hero">
 		    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default scroll-menu">
+    <nav class="navbar navbar-alpha scroll-menu">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -41,9 +41,14 @@
             <span class="icon-bar"></span>
           </button>
 		
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand visible-xs" href="#">
           	<img src="images/slyder-stroked-top-01.svg" onerror="this.src=slyder-stroked.png; this.onerror=null;" class="slyder-logo slyder-logo-top scroll-animation" 
-          		data-scroll-animation-rate="0.1" data-scroll-animation-property="margin-left" data-scroll-animation-max="50" />
+          		data-scroll-animation-rate="0.2" data-scroll-animation-property="margin-left" data-scroll-animation-max="70" />
+          	<img src="images/slyder-stroked-bottom-02.svg" onerror="this.src=slyder-stroked.png; this.onerror=null;" class="slyder-logo slyder-logo-bottom" />
+          	</a>
+			<a class="navbar-brand hidden-xs" href="#">
+          	<img src="images/slyder-stroked-top-01.svg" onerror="this.src=slyder-stroked.png; this.onerror=null;" class="slyder-logo slyder-logo-top scroll-animation" 
+          		data-scroll-animation-rate="0.2" data-scroll-animation-property="margin-left" data-scroll-animation-max="100" />
           	<img src="images/slyder-stroked-bottom-02.svg" onerror="this.src=slyder-stroked.png; this.onerror=null;" class="slyder-logo slyder-logo-bottom" />
           	</a>
         </div>
@@ -59,11 +64,10 @@
     </nav>
 		<div class="container-fluid">
 			<div class="slyder-hero-items text-center">
-			<img class="slyder-hero-image" src="#">
 			<h1>Slyder Case<br>
 			<small>Available for iPhone 5, 5s, 6 and 6s</small></h1>
 			</div>
-			<div class="slyder-hero-subnav text-center">
+			<div class="slyder-hero-subnav text-center hidden-xs">
 				<ul class="nav nav-justified scroll-menu">
 				  <li role="presentation" class="active"><a href="#meet-slyder">Meet Slyder Case</a></li>
 				  <li role="presentation"><a href="#">Case Specs</a></li>
@@ -81,10 +85,13 @@
 			</div>
 			<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-7 visible-xs">
+					<img class="img-responsive" src="images/iphone-6-0-blk.jpg" alt="Phone Pic: Possibly Interactive">
+				</div>
+				<div class="col-sm-5">
 					<div class="gutter-top hidden-xs">&nbsp;</div>
 					<h2>Purchase</h2>
-					<p class="lead">select your iPhone</p>
+					<p class="lead">select your color</p>
 					<ul>
 						<li>iPhone 5</li>
 						<li>iPhone 5s</li>
@@ -97,7 +104,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-8">
+				<div class="col-sm-7 hidden-xs">
 					<img class="img-responsive img-product" src="images/iphone-6-0-blk.jpg" alt="Phone Pic: Possibly Interactive">
 				</div>
 			</div>
@@ -107,12 +114,17 @@
 	<div class="content">
 		<div class="container-fluid text-center" id="case-specs">
 			<h3>Built to Last</h3>
-			<p class="lead">Slyder cases are made from really nice stuff.<br>Peep this brand name material we use.</p>
+			<p class="lead">360&deg; Protection<br>For Your Phone and Cards</p>
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-3 col-sm-4 col-md-4"></div>
 					<div class="col-xs-6 col-sm-4 col-md-2 col-md-offset-1"><img src="images/dupont-black.png" alt="Gilt Group" class="img-responsive center-block"></div>
 					<div class="col-xs-3 col-sm-4 col-md-5"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12"><img src="images/case-angles-wide.jpg" alt="iPhone Case Angles" class="img-responsive center-block"></div>
 				</div>
 			</div>
 		</div>
@@ -149,36 +161,29 @@
 	<footer>
     <div class="footer" id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-7 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
+			<div class="row">
+				<div class="col-xs-12">
+					<ul>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Press Inquiries</a></li>
+						<li><a href="#">Terms &amp; Conditions</a></li>
+						<li><a href="#">Warranty</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row wrapper-bottom">
+				<div class="col-xs-6">
+					<ul>
+						<li><a href="#">To the top</a></li>
+						<li>SLYDER CASE, Austin, TX</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<img class="img-responsive footer-logo center-block" src="images/slyder-stroked-BLK.svg">
+				</div>
+			</div>
 
-                <div class="col-sm-4 col-sm-offset-1 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                    </ul>
-                </div>
-            </div>
             <!--/.row--> 
         </div>
         <!--/.container--> 
@@ -187,12 +192,12 @@
     
     <div class="footer-bottom">
         <div class="container">
-            <p class="pull-left"> Copyright © 2016 Slyder Case. All right reserved. </p>
-            <div class="pull-right">
-                <ul class="nav nav-pills payments">
+			<div class="col-xs-12 col-sm-6"><p class="copyright">Copyright © 2016 Slyder Case. All right reserved.</p></div>
+            <div class="col-xs-12 col-sm-6">
+                <ul class="list-inline payments">
                 	<li><i class="fa fa-cc-visa"></i></li>
                     <li><i class="fa fa-cc-mastercard"></i></li>
-                    <li><i class="fa fa-cc-amex"></i></li>
+                     <li><i class="fa fa-cc-amex"></i></li>
                     <li><i class="fa fa-cc-paypal"></i></li>
                 </ul> 
             </div>
