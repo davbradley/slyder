@@ -6729,8 +6729,14 @@ button.close {
   border: 2px solid #666;
   color: #fcfcfc;
 }
+.top-30 {
+  margin-top: 30px;
+}
+.top-60 {
+  margin-top: 60px;
+}
 body {
-  background-color: azure;
+  position: relative;
 }
 h3 {
   text-transform: uppercase;
