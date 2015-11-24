@@ -60,4 +60,23 @@ jQuery(function ($) {
 			$slyderHero.find('.slyder-hero-items').show();
 		}
 	});
+
+	$('input.product-option').click(function () {
+		var $productGroup = $($(this).data('product-group'));
+		var $productDetails = $($(this).data('product-details'));
+		$productGroup.hide();
+		$productDetails.show();
+	}).each(function () {
+		$('input[name="' + this.name + '"]').first().click();
+	});
+
+	$('select.product-options').click(function () {
+		var selectedIndex = this.selectedIndex;
+		var $productGroup = $($(this.options[selectedIndex]).data('product-group'));
+		var $productDetails = $($(this.options[selectedIndex]).data('product-details'));
+		$productGroup.hide();
+		$productDetails.show();
+	}).each(function () {
+		this.selectedIndex = 0;
+	});
 });

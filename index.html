@@ -204,6 +204,46 @@ document.getElementById('ShopifyEmbedScript') || document.write('<script type="t
 			</div>
 		</div>
 	</div>
+
+	<div class="content">
+		<div class="hidden-xs">
+			<label for="product-option-1">
+				<input class="product-option" name="product-group-1" id="product-option-1" type="radio" data-product-group=".my-product-group-1" data-product-details=".product-1-details" />
+				Product 1
+			</label>
+			<label for="product-option-2">
+				<input class="product-option" name="product-group-1" id="product-option-2" type="radio" data-product-group=".my-product-group-1" data-product-details=".product-2-details" />
+				Product 2
+			</label>
+			<label for="product-option-3">
+				<input class="product-option" name="product-group-1" id="product-option-3" type="radio" data-product-group=".my-product-group-1" data-product-details=".product-3-details" />
+				Product 3
+			</label>
+		</div>
+
+		<div class="hidden-sm hidden-md hidden-lg">
+			<label for="product-options-select">Product Options:</label>
+			<select class="product-options" id="product-options-select">
+				<option data-product-group=".my-product-group-1" data-product-details=".product-1-details">Product 1</option>
+				<option data-product-group=".my-product-group-1" data-product-details=".product-2-details">Product 2</option>
+				<option data-product-group=".my-product-group-1" data-product-details=".product-3-details">Product 3</option>
+			</select>
+		</div>
+
+		<div class="my-product-group-1 product-1-details">
+			<p>This is product 1!</p>
+			<p>You can put any product 1 info here!</p>
+		</div>
+		<div class="my-product-group-1 product-2-details">
+			<p>This is product 2!</p>
+			<p>You can put any product 2 info here!</p>
+		</div>
+		<div class="my-product-group-1 product-3-details">
+			<p>This is product 3!</p>
+			<p>You can put any product 3 info here!</p>
+		</div>
+	</div>
+
 	<footer>
 		<div class="footer" id="footer">
 			<div class="container">
