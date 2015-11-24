@@ -70,7 +70,7 @@ jQuery(function ($) {
 		$('input[name="' + this.name + '"]').first().click();
 	});
 
-	$('select.product-options').click(function () {
+	$('select.product-options').change(function () {
 		var selectedIndex = this.selectedIndex;
 		var $productGroup = $($(this.options[selectedIndex]).data('product-group'));
 		var $productDetails = $($(this.options[selectedIndex]).data('product-details'));
