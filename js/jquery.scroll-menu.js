@@ -1,6 +1,12 @@
 (function($) {
+
+	var delay = new Delay(100);
 	
 	function changeHandler() {
+		if (!delay.ready()) {
+			return false;
+		}
+
 		var topOffset = 0;
 		var scrollTop = $(window).scrollTop();
 		this.removeClass('scroll-menu-active').css('top', '').css('width', '');

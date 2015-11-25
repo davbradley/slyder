@@ -1,6 +1,7 @@
 (function($) {
-	
+
 	function changeHandler() {
+
 		var scrollTop = $(window).scrollTop();
 		this.each(function () {
 			var $item = $(this);
