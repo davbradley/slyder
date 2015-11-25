@@ -6971,7 +6971,7 @@ nav.navbar-alpha .navbar-toggle .icon-bar {
 /* Product details */
 .product-details-hidden {
   position: fixed;
-  left: -1500px;
+  right: -3000px;
 }
 @media only screen and (min-width: 768px) {
   .footer-logo {
