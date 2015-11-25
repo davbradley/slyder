@@ -61,6 +61,8 @@ jQuery(function ($) {
 		}
 	});
 
+
+	// Product options
 	$('input.product-option').click(function () {
 		var $productGroup = $($(this).data('product-group'));
 		var $productDetails = $($(this).data('product-details'));
@@ -79,4 +81,8 @@ jQuery(function ($) {
 	}).each(function () {
 		this.selectedIndex = 0;
 	});
+
+
+	// Anchor scroll
+	$('a[href^="#"]').anchorScroll();
 });
