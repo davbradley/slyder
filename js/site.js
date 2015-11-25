@@ -64,8 +64,8 @@ jQuery(function ($) {
 	$('input.product-option').click(function () {
 		var $productGroup = $($(this).data('product-group'));
 		var $productDetails = $($(this).data('product-details'));
-		$productGroup.hide();
-		$productDetails.show();
+		$productGroup.addClass('product-details-hidden');
+		$productDetails.removeClass('product-details-hidden');
 	}).each(function () {
 		$('input[name="' + this.name + '"]').first().click();
 	});
@@ -74,8 +74,8 @@ jQuery(function ($) {
 		var selectedIndex = this.selectedIndex;
 		var $productGroup = $($(this.options[selectedIndex]).data('product-group'));
 		var $productDetails = $($(this.options[selectedIndex]).data('product-details'));
-		$productGroup.hide();
-		$productDetails.show();
+		$productGroup.addClass('product-details-hidden');
+		$productDetails.removeClass('product-details-hidden');
 	}).each(function () {
 		this.selectedIndex = 0;
 	});
