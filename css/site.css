@@ -6795,8 +6795,11 @@ p.lead {
 .slyder-hero .slyder-hero-subnav ul li a {
   color: #FFFFFF;
 }
-.slyder-hero .slyder-hero-subnav ul li a:hover {
+.slyder-hero .slyder-hero-subnav ul li a:hover,
+.slyder-hero .slyder-hero-subnav ul li a:focus,
+.slyder-hero .slyder-hero-subnav ul li a:visited {
   background-color: none;
+  cursor: pointer;
 }
 #slyder-hero-canvas {
   position: absolute;
